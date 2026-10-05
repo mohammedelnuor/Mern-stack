@@ -3,12 +3,12 @@
     "frontend": {
       "root": "frontend",
       "framework": "create-react-app",
-      "entrypoint": "./frontend/src/App.js"
+      "entrypoint": "/frontend/src/App.js"
     },
     "backend": {
       "root": "backend",
       "framework": "express",
-      "entrypoint": "./backend/server.js"
+      "entrypoint": "/backend/server.js"
     }
   },
   "rewrites": [
