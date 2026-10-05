@@ -15,14 +15,19 @@ body {
   line-height: 1.6;
   color: var(--text-dark);
 }
+
+/* Navbar */
 header {
   background: linear-gradient(90deg, #1aac83, #148f6f);
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 header .container {
-  max-width: 1200px; /* ضم الحاوية قليلاً */
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 18px 28px; /* أكبر قليلاً مثل القديم */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,23 +35,28 @@ header .container {
 header a {
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 1em;
+  font-weight: 600;
+  font-size: 1.2em; /* أكبر */
   letter-spacing: 0.5px;
-  transition: color 0.3s ease;
-}
-header a:hover {
-  color: #ffefef;
 }
 header .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-family: "VT323", monospace;
-  font-size: 1.5em;
+  font-size: 1.8em; /* أكبر */
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+header .logo img {
+  width: 55px; /* كبرنا حجم اللوجو */
+  height: 55px;
+}
+
+/* باقي التنسيقات */
 .pages{
-  max-width: 1200px; /* ضم المحتوى قليلاً */
+  max-width: 1200px;
   padding: 20px;
   margin: 0 auto;
 }
@@ -55,24 +65,24 @@ header .logo {
 .home {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 80px; /* قللت المسافة */
+  gap: 80px;
 }
 .workout-details {
   background: #fff;
   border-radius: 4px;
   margin: 15px auto;
-  padding: 18px; /* أصغر قليلاً */
+  padding: 18px;
   position: relative;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
 }
 .workout-details h4 {
   margin: 0 0 8px 0;
-  font-size: 1.1em; /* أصغر */
+  font-size: 1.1em;
   color: var(--primary);
 }
 .workout-details p {
   margin: 0;
-  font-size: 0.85em; /* أصغر */
+  font-size: 0.85em;
   color: #555;
 }
 
@@ -98,10 +108,10 @@ header .logo {
 label {
   font-weight: 500;
   margin-top: 8px;
-  font-size: 0.9em; /* أصغر */
+  font-size: 0.9em;
 }
 input {
-  padding: 8px; /* أصغر */
+  padding: 8px;
   margin-top: 8px;
   margin-bottom: 15px;
   width: 100%;
@@ -119,7 +129,7 @@ form button {
   background: var(--primary);
   border: 0;
   color: #fff;
-  padding: 9px 12px; /* أصغر */
+  padding: 9px 12px;
   font-family: "Poppins";
   border-radius: 4px;
   cursor: pointer;
