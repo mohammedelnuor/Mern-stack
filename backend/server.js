@@ -40,3 +40,5 @@ mongoose.connect(MONGO_URI)
   .catch((err) => {
     console.error('❌ Error connecting to DB:', err);
   });
+
+  module.exports = app;
